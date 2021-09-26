@@ -27,3 +27,4 @@ D:\Repos\videoGameApi\obj\Debug\net5.0\videoGameApi.dll
 D:\Repos\videoGameApi\obj\Debug\net5.0\ref\videoGameApi.dll
 D:\Repos\videoGameApi\obj\Debug\net5.0\videoGameApi.pdb
 D:\Repos\videoGameApi\obj\Debug\net5.0\videoGameApi.genruntimeconfig.cache
+D:\Repos\videoGameApi\bin\Debug\net5.0\Video Game API .NET.postman_collection.json
