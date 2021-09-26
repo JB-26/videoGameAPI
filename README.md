@@ -12,6 +12,8 @@ You can also view this via Swagger.
 
 Once you have cloned the repo, run 'dotnet run' via the terminal and go to 'https://localhost:5001/swagger/index.html' to view the API!
 
+The postman collection also includes environment variables so you can send requests to the application on Azure.
+
 ### Introduction
 The model for the API is a VideoGame class which contains the following properties:
 - Name
