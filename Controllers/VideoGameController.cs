@@ -15,12 +15,12 @@ namespace videoGameApi.Controllers
         }
 
         // GET all action
-        [HttpGet]
+        [HttpGet("getAll")]
         public ActionResult<List<VideoGame>> GetAll() =>
     VideoGameService.GetAll();
 
         // GET by Id action
-        [HttpGet("{id}")]
+        [HttpGet("findGame/{id}")]
         public ActionResult<VideoGame> Get(int id)
         {
             var game = VideoGameService.Get(id);
@@ -32,7 +32,7 @@ namespace videoGameApi.Controllers
         }
 
         // POST action
-        [HttpPost]
+        [HttpPost("addGame")]
         public IActionResult Create(VideoGame game)
         {
             VideoGameService.Add(game);
@@ -40,7 +40,7 @@ namespace videoGameApi.Controllers
         }
 
         // PUT action
-        [HttpPut("{id}")]
+        [HttpPut("updateGame/{id}")]
         public IActionResult Update(int id, VideoGame game)
         {
             if (id != game.id)
@@ -56,7 +56,7 @@ namespace videoGameApi.Controllers
         }
 
         // DELETE action
-        [HttpDelete("{id}")]
+        [HttpDelete("deleteGame/{id}")]
         public IActionResult Delete(int id)
         {
             var pizza = VideoGameService.Get(id);
